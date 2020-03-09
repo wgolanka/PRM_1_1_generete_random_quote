@@ -11,6 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val quotation : TextView = findViewById(R.id.quotation)
+        quotation.setTextIsSelectable(true)
     }
 
     fun onClickShowRandomQuotation(view: View) {
@@ -19,15 +22,14 @@ class MainActivity : AppCompatActivity() {
                 "Nie chce słyszeć:\nNie wiem",
                 "Praca ładna i wychuchana",
                 "Late delivery - na 50% punktów",
-                "Nawet jak się nie uda wszystkiego to i tak spróbować oddać",
-                "Na następne zajęcia każdy w domu zainstalował android studio",
+                "Nawet jak się nie uda wszystkiego\nto i tak spróbować oddać",
+                "Na następne zajęcia każdy w domu\nzainstaluje android studio",
                 "Ważne są śmieszne obrazki",
-                "50% sumy punktów potrzebna do zaliczenia.",
+                "50% sumy punktów potrzebna\n do zaliczenia.",
                 "Proszę nie przeginać",
                 "Nie zabijać emulatora za każdym razem.")
 
         val quotation : TextView = findViewById(R.id.quotation)
-
         val randomQuotation = quotations[Random.nextInt(0, quotations.size -1)]
         quotation.text = randomQuotation
     }
