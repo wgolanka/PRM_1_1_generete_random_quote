@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PRM_1_1_generete_random_quote</string>
     <string name="click_me_to_get_quotation">Click me to get quotation</string>
+    <string name="your_future_quotation">Your future quotation</string>
 </resources>
