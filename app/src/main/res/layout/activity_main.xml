@@ -30,6 +30,7 @@
         android:text="@string/your_future_quotation"
         android:textAllCaps="false"
         android:textColor="#453627"
+        android:textIsSelectable="true"
         android:textSize="24sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/gen_random_button"

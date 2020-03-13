@@ -11,9 +11,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val quotation : TextView = findViewById(R.id.quotation)
-        quotation.setTextIsSelectable(true)
     }
 
     fun onClickShowRandomQuotation(view: View) {
